@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Blower App</title>
+    <link rel="stylesheet" href='style.css'/>
+    <link rel="stylesheet" href='blower.css'/>
+    <style>
+     #img{
+        background-color:white;
+        width:450px; height:450px;
+        border-radius:30px;
+     }
+     #stop3{
+      height:250px;
+     }
+  </style>
+
+</head>
+
+<body>
+    <center>
+      <h1>
+          The Blower App
+      </h1>
+      <br>
+      
+      
+      <div id="img">
+        <br>
+        <img id="image-fan-moving" src="fan2.png"/>
+       
+        <img class="rotatemin linear infinite" id="image-fan-moving-1" src="fan2.png"/>
+      
+        <img class="rotatemedium linear infinite" id="image-fan-moving-2" src="fan2.png"/>
+        
+        <img class="rotatemax linear infinite" id="image-fan-moving-3" src="fan2.png"/>
+      </div>
+      <br>
+      
+      
+      <span id="speed">
+        
+       <button class="min" onclick="min()">Minimum</button>
+       <button class="medium" onclick="medium()">Medium</button>
+       <button class="max"  onclick="max()">Maximum</button>
+        
+      </span>
+      <br>
+      <br>
+      <div>
+        <img onclick="stop_blow()" id="stop3" src="stop-sign.png"/>
+      </div>
+      <p onclick="redirect();" class="text2">
+ 
+        ℹ️ How this works ?
+      
+      </p>
+    
+  </center>
+  <script src="blower.js"></script>
+</body>
+
+</html>
